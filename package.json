@@ -1,0 +1,24 @@
+{
+  "name": "webdev-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahana-saini/webdev-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sahana-saini/webdev-project/issues"
+  },
+  "homepage": "https://github.com/sahana-saini/webdev-project#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
