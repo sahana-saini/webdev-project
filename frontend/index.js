@@ -23,3 +23,23 @@ function toggle(){
     document.getElementById("card-name").innerHTML = users[currIndex].name
     document.getElementById("card-gender").innerHTML = users[currIndex].gender
 }
+
+function random(){
+    //url: https://randomuser.me/api
+
+    fetch('https://randomuser.me/api')
+        .then(function(response){
+        return response.json();
+        })
+        .then(function(data){
+           console.log(data);
+           var detail = data.results[0];
+           document.getElementById("card-image").src = detail.picture.large;
+           document.getElementById("card-gender").innerHTML = detail.gender;
+           
+           var fullName = detail.name.title+"."+ detail.name.first+" "+ detail.name.last
+
+           document.getElementById("card-name").innerHTML = fullName
+
+        })
+}
